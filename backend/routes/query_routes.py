@@ -1,1 +1,0 @@
-# FastAPI routes (/query, /health)
