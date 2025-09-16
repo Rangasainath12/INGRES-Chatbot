@@ -1,0 +1,1 @@
+-- SQL schema + sample inserts (mock data)
