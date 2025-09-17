@@ -1,70 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>INGRES Assistant</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRES Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="app-bg">
-    <main class="chat-card" role="main" aria-label="INGRES Assistant">
-
-      <!-- Header -->
-      <header class="chat-header">
-        <div class="logo">💧</div>
-        <div class="header-info">
-          <h1>INGRES Assistant</h1>
-          <p class="subtitle">Groundwater Resource Expert</p>
-          <p class="muted">AI-powered groundwater insights at your fingertips</p>
-        </div>
-      </header>
-
-      <!-- Messages -->
-      <section id="chatBody" class="chat-body" aria-live="polite">
-        <div class="message bot">
-          Hello! I'm your INGRES groundwater resource expert. I can help you analyze groundwater data, generate reports, and provide sustainability insights. How can I assist you today?
-        </div>
-        <div class="timestamp">02:51 PM</div>
-      </section>
-
-      <!-- Quick actions -->
-      <div class="quick-actions" role="toolbar" aria-label="Quick actions">
-        <button class="qa">📊 View Groundwater Trends</button>
-        <button class="qa">📑 Regional Reports</button>
-        <button class="qa">💧 Water Quality Analysis</button>
-        <button class="qa">🌱 Sustainability Insights</button>
-        <button class="qa">🗺 Aquifer Mapping</button>
-        <button class="qa">📂 Export Data</button>
-      </div>
-
-      <!-- Composer -->
-      <div class="chat-composer">
-        <div class="input-left">
-          <div class="dropdown" id="inputDropdown">
-            <button id="toggleDropdown" class="dropdown-btn" aria-haspopup="true" aria-expanded="false">☰</button>
-            <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
-              <button class="dropdown-item" data-action="graph">📈 Graph / Flowchart</button>
-
-              <div class="dropdown-item has-submenu">
-                <button class="submenu-toggle" type="button" aria-haspopup="true" aria-expanded="false">🌐 Language</button>
-                <div class="submenu" id="languageSubmenu" aria-hidden="true">
-                  <button class="dropdown-item" data-lang="en">English</button>
-                  <button class="dropdown-item" data-lang="hi">Hindi</button>
-                </div>
-              </div>
-
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="INGRES Logo">
+                <h1>INGRES Assistant</h1>
             </div>
-          </div>
+        </header>
+        
+        <div class="chat-log" id="chatLog">
+            <!-- Welcome message -->
+            <div class="message assistant-message">
+                <div class="message-content">
+                    <p>Hello! I'm the INGRES Assistant. How can I help you with groundwater information today?</p>
+                </div>
+            </div>
         </div>
+        
+        <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <div class="action-buttons">
+                <button class="action-btn" data-action="view_trends">View Trends</button>
+                <button class="action-btn" data-action="generate_report">Generate Report</button>
+                <button class="action-btn" data-action="water_quality">Water Quality</button>
+                <button class="action-btn" data-action="rainfall_data">Rainfall Data</button>
+                <button class="action-btn" data-action="groundwater_levels">Groundwater Levels</button>
+                <button class="action-btn" data-action="water_conservation">Water Conservation</button>
+            </div>
+        </div>
+        
+        <footer class="chat-footer">
+            <form id="chatForm">
+                <div class="input-container">
+                    <input type="text" id="userInput" placeholder="Type your question here..." autocomplete="off">
+                    <button type="submit" id="sendBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </footer>
+    </div>
 
-        <input id="userInput" class="composer-input" type="text" placeholder="Ask about groundwater resources, upload data, or request analysis..." aria-label="Message input">
-        <button id="sendBtn" class="send-btn" aria-label="Send message">➤</button>
-      </div>
-
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
