@@ -1,21 +1,21 @@
 # INGRES-Chatbot
-# 🌊 AI-Powered Groundwater Chatbot
+# AI-Powered Groundwater Chatbot
 
-## 📌 Overview
+## Overview
 
 This project is an *AI-powered multilingual chatbot* designed to simplify access to groundwater data.
 Users can ask questions in *English or Hindi, and the chatbot responds with **text, charts, and maps* generated from groundwater datasets.
 
 The prototype was built as part of *Smart India Hackathon 2025*.
 
-## 🚀 Features
+## Features
 
 * *Multilingual Support*: English & Hindi (powered by SarvamAI for translation).
 * *AI-Powered Queries: Uses **Gemini LLM* to convert natural language into SQL queries.
 * *User-Friendly*: Simple web-based frontend (HTML, CSS, JavaScript).
 * *Scalable: Currently uses mock data but can integrate with **INGRES groundwater datasets*.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * *Frontend*: HTML, CSS, JavaScript
 * *Backend*: Python (Flask)
@@ -23,7 +23,7 @@ The prototype was built as part of *Smart India Hackathon 2025*.
 * *LLM*: Gemini (via API)
 * *Database*: Mock SQL (MySQL)
 
-## ⚙ Workflow
+## Workflow
 
 1. User enters query in English or Hindi (Frontend).
 2. Flask backend receives the request.
@@ -34,7 +34,7 @@ The prototype was built as part of *Smart India Hackathon 2025*.
 7. Frontend displays results as *text*.
 8. If needed, output is translated back to Hindi.
 
-## 📂 Project Structure
+## Project Structure
 
 project/
 │── backend/
@@ -76,7 +76,7 @@ Open frontend/index.html in your browser (or serve via VSCode Live Server).
 
 (Add screenshot of your chatbot + chart here)
 
-## 🌍 Future Scope
+## Future Scope
 
 * Support for *20+ Indian languages* (IndicTrans2).
 * Integration with *real INGRES APIs*.
