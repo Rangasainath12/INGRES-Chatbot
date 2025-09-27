@@ -14,7 +14,7 @@ def connect_to_database():
             host='localhost',          # Your MySQL host
             database='water_data_db',  # The name of your database
             user='root',      # Replace with your MySQL username
-            password='ippiuwyupo' #password 
+            password='password' #password 
         )
         if connection.is_connected():
             print("✅ Successfully connected to the database.")
