@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 # Configure the API key
 try:
-    genai.configure(api_key='AIzaSyAKVGLnh7VVGYhVk5zrohTg1a6yeUZ-OiA')
+    genai.configure(api_key='Gemini_api_key')
     # genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 except KeyError:
     raise ValueError("API key not found. Please set the GOOGLE_API_KEY environment variable.")
