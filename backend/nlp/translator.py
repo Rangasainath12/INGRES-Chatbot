@@ -1,7 +1,7 @@
 # Sarvam translation functions
 from sarvamai import SarvamAI
 
-client = SarvamAI(api_subscription_key="sk_obw9k36d_qpK39tyJdlYYSoVehQJ7AIck")
+client = SarvamAI(api_subscription_key="SARVAM_API_KEY")
 
 def translate_text_english(text):
     response = client.text.translate(
